@@ -1,0 +1,11 @@
+version: "3"
+services:
+  dashcamnet-tao-toolkit:
+    container_name: dashcamnet-tao-toolkit
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/app/src
+    working_dir: /app/src
+    tty: true
