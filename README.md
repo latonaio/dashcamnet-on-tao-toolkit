@@ -15,7 +15,9 @@ DashCamNet は、特徴抽出にResNet18を使用しており、混雑した場�
 ## 動作手順
 
 ### engineファイルの生成
-DashCamNet のAIモデルをデバイスに最適化するため、ResNet18 における DashCamNet の .etlt ファイルを engine file に変換します。
+DashCamNet のAIモデルをデバイスに最適化するため、ResNet18 における DashCamNet の .etlt ファイルを engine file に変換します。  
+現時点におけるNVIDIAの仕様では、GPUのアーキテクチャごとに engine file の生成が必要です。  
+本レポジトリに格納された dashcamnet.engine は、実際に生成される engine file の参考例です。  
 engine fileへの変換は、Makefile に記載された以下のコマンドにより実行できます。
 
 ```
