@@ -11,7 +11,7 @@ tao-docker-build: ## TAO用コンテナをビルド
 	docker-compose -f docker-compose.yaml build
 
 tao-convert:
-	docker exec -it dashcamnet-tao-toolkit tao-converter -k tlt_encode -d 3,544,960 -e /app/src/dashcamnet.engine /app/src/resnet18_dashcamnet_pruned.etlt 
+	docker exec -it dashcamnet-tao-toolkit tao-converter -k tlt_encode -t fp16 -d 3,544,960 -e /app/src/dashcamnet.engine /app/src/resnet18_dashcamnet_pruned.etlt 
 
 tao-docker-login: ## TAO用コンテナにログイン
 	docker exec -it dashcamnet-tao-toolkit bash

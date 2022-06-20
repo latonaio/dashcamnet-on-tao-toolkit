@@ -32,3 +32,5 @@ tao-convert:
 ## engineファイルについて
 engineファイルである dashcamnet.engine は、[dashcamnet-on-deepstream](https://github.com/latonaio/dashcamnet-on-deepstream)と共通のファイルであり、本レポジトリで作成した engineファイルを、当該リポジトリで使用しています。  
 
+## 演算について
+本レポジトリでは、ニューラルネットワークのモデルにおいて、演算スループット効率を高めるため、FP16(半精度浮動小数点)を使用しています。  
